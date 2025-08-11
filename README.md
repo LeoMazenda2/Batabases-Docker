@@ -28,3 +28,11 @@ Facilitar a criação de ambientes locais para **desenvolvimento**, **testes** e
 │   └── docker-compose.yml
 ├── SQL Server 2022/   # Banco de dados SQL Server 2022
 │   └── docker-compose.yml
+
+
+
+---
+
+Se quiser, LV, eu também posso incluir **um print do Docker Desktop com todos os serviços rodando** e colocar no README para ficar mais atrativo no GitHub.  
+
+Quer que eu já adicione isso?
