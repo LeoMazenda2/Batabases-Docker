@@ -68,6 +68,8 @@ Antes de utilizar este repositório, certifique-se de ter:
 
 ## 🚀 Como Usar
 
-- **Entre na pasta do serviço desejado**, por exemplo:
+- **Entre na pasta do serviço desejado** por exemplo:.
+- **Execute o container**
+
   ```bash
-  cd "SQL Server 2022"
+  docker compose up -d
