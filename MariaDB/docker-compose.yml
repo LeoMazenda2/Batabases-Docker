@@ -1,0 +1,31 @@
+name: mariadb
+version: '3.8'
+
+services:
+  mariadb:
+    image: mariadb:11.4
+    container_name: mariadb_11
+    platform: linux/amd64
+    environment:
+      - MARIADB_ROOT_PASSWORD=@Nunsey123#
+      - MARIADB_DATABASE=appdb
+      - MARIADB_USER=admin
+      - MARIADB_PASSWORD=@Nunsey123#
+    ports:
+      - "3306:3306"
+    volumes:
+      - mariadb_data:/var/lib/mysql
+    # restart: always
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -p$${MARIADB_ROOT_PASSWORD} || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  mariadb_data:
+
+
+
+
+# restart: always
