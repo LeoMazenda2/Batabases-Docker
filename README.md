@@ -1,31 +1,30 @@
-# 🐳 Ambientes de Banco de Dados com Docker Compose
+# 🐳 Databases-Docker
 
-Este repositório contém **5 configurações Docker Compose** para inicializar rapidamente ambientes de bases de dados populares, ideais para **desenvolvimento**, **testes** e **aprendizagem**.
+Este repositório reúne **ambientes prontos de banco de dados** usando Docker Compose.  
+Cada pasta contém um ficheiro `docker-compose.yml` já configurado para inicializar rapidamente o serviço correspondente.
 
-## 📋 Lista de Serviços
+## 📌 Objetivo
+Facilitar a criação de ambientes locais para **desenvolvimento**, **testes** e **aprendizagem** sem precisar instalar manualmente cada SGBD na máquina.
 
-| Serviço         | Porta Padrão | Usuário | Senha          | Base de Dados Padrão |
-|-----------------|--------------|--------|---------------|----------------------|
-| 🗄 SQL Server 2022 | 1433         | sa     | @Nunsey123#   | — (criar manualmente)|
-| 🐬 MySQL 8.x     | 3306         | admin  | @Nunsey123#   | appdb                |
-| 🐬 MariaDB 11.x  | 3306         | admin  | @Nunsey123#   | appdb                |
-| 🍃 MongoDB 7.x   | 27017        | admin  | @Nunsey123#   | — (criar manualmente)|
-| 🐘 PostgreSQL 16 | 5432         | admin  | @Nunsey123#   | appdb                |
-
-> ⚠️ **Atenção:** Estas senhas são para uso local e não devem ser utilizadas em produção.
+## 👥 Público-Alvo
+- **Desenvolvedores** que trabalham com múltiplas bases de dados.
+- **Estudantes** de SQL ou NoSQL.
+- **Equipes de QA** que precisam de ambientes de teste isolados.
+- **Integradores** que necessitam validar aplicações em diferentes SGBDs.
 
 ---
 
-## 🚀 Pré-requisitos
-- [Docker](https://www.docker.com/products/docker-desktop) instalado
-- Portas padrão livres no sistema
-- Conhecimentos básicos de terminal
+## 📂 Estrutura do Repositório
 
----
-
-## 🛠 Como Usar
-
-### 1️⃣ Subir o serviço
-No diretório do serviço desejado:
-```bash
-docker compose up -d
+```plaintext
+/
+├── Azurite/           # Emulador de Azure Storage (Tabelas, Blobs, Filas)
+│   └── docker-compose.yml
+├── MariaDB/           # Banco de dados MariaDB
+│   └── docker-compose.yml
+├── MySQL 8.x/         # Banco de dados MySQL 8
+│   └── docker-compose.yml
+├── PostgreSQL/        # Banco de dados PostgreSQL 16
+│   └── docker-compose.yml
+├── SQL Server 2022/   # Banco de dados SQL Server 2022
+│   └── docker-compose.yml
