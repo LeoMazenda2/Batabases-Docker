@@ -20,8 +20,8 @@ Entre na pasta do serviço desejado, por exemplo:
 
   cd "SQL Server 2022"
   
-Execute o container:
+Execute o container: <br\>
   docker compose up -d
   
-Para parar o container:
+Para parar o container:<br\>
   docker compose down
