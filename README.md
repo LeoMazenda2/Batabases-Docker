@@ -14,25 +14,14 @@ Facilitar a criação de ambientes locais para **desenvolvimento**, **testes** e
 
 ---
 
-## 📂 Estrutura do Repositório
+## 🚀 Como Usar
 
-```plaintext
-/
-├── Azurite/           # Emulador de Azure Storage (Tabelas, Blobs, Filas)
-│   └── docker-compose.yml
-├── MariaDB/           # Banco de dados MariaDB
-│   └── docker-compose.yml
-├── MySQL 8.x/         # Banco de dados MySQL 8
-│   └── docker-compose.yml
-├── PostgreSQL/        # Banco de dados PostgreSQL 16
-│   └── docker-compose.yml
-├── SQL Server 2022/   # Banco de dados SQL Server 2022
-│   └── docker-compose.yml
+Entre na pasta do serviço desejado, por exemplo:
 
-
-
----
-
-Se quiser, LV, eu também posso incluir **um print do Docker Desktop com todos os serviços rodando** e colocar no README para ficar mais atrativo no GitHub.  
-
-Quer que eu já adicione isso?
+  cd "SQL Server 2022"
+  
+Execute o container:
+  docker compose up -d
+  
+Para parar o container:
+  docker compose down
