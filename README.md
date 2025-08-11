@@ -68,7 +68,7 @@ Antes de utilizar este repositório, certifique-se de ter:
 
 ## 🚀 Como Usar
 
-- **Entre na pasta do serviço desejado** por exemplo:.
+- **Entre na pasta do serviço desejado**
 - **Execute o container**
 
   ```bash
