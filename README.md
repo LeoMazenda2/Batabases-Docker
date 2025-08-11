@@ -35,9 +35,39 @@ Tudo isso **sem instalar manualmente** cada SGBD na máquina.
 - 🧪 **Equipes de QA** que precisam de ambientes de teste isolados.
 - 🔗 **Integradores** que necessitam validar aplicações com diferentes SGBDs.
 
+---
+
+## 🛠 Pré-requisitos
+
+Antes de utilizar este repositório, certifique-se de ter:
+
+1. **Docker Desktop** instalado e atualizado.  
+   - [Download Docker Desktop](https://www.docker.com/products/docker-desktop)
+   - Disponível para **Windows**, **macOS** e **Linux**.
+
+2. **Docker Compose** instalado (versão 2.x ou superior).  
+   - Já vem incluso no Docker Desktop, mas em Linux pode ser necessário instalar manualmente:
+     ```bash
+     sudo apt install docker-compose-plugin
+     ```
+
+3. **Portas livres** para evitar conflitos:  
+   - **1433** → SQL Server  
+   - **3306** → MySQL / MariaDB  
+   - **5432** → PostgreSQL  
+   - **27017** → MongoDB  
+   - **10002** → Azurite (Tabelas)
+
+4. **Acesso ao terminal** ou linha de comando:
+   - Windows → PowerShell / CMD
+   - macOS / Linux → Terminal
+
+5. **Permissões de administrador** para rodar o Docker.
+
+---
 
 ## 🚀 Como Usar
 
-- **Entre na pasta do serviço desejado** por exemplo:.
-- **Execute o container** 👉 docker compose up -d
-- **Para parar o container:** q👉 docker compose down 
+- **Entre na pasta do serviço desejado**, por exemplo:
+  ```bash
+  cd "SQL Server 2022"
